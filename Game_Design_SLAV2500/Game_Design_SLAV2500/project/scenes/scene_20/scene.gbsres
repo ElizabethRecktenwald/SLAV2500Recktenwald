@@ -1,0 +1,25 @@
+{
+  "_resourceType": "scene",
+  "id": "74435f22-acec-4790-acb3-af14ada4ffa7",
+  "_index": 2,
+  "name": "Scene 20",
+  "backgroundId": "18b6a171-b995-456f-ac5f-60c5d0711736",
+  "tilesetId": "",
+  "width": 80,
+  "height": 18,
+  "type": "TOPDOWN",
+  "paletteIds": [
+    "325f5712-ff6c-40e7-b105-c6d795846783"
+  ],
+  "spritePaletteIds": [],
+  "collisions": "004b+0f!002+0f!004c+0f!004f+0f!004f+0f!005+0f6+0044+0f!002+0f!002+0f!004+0f!0044+0f!005+0f!004+0f!0044+0f!005+0f!004+0f!0044+0f!005+0f!004+0f!0012+0f!0031+0f!002+0f!002+0f!004+0f!0012+0f5+002d+0f!005+0f!004+0f!0012+0f2+002+0f!002d+0f!005+0f1a+002+0f2f+0052+0f!0051+0f!003+0f!003+0f!003+0f!003+0f!003+0f!003+0f!003+0f!003+0f!003+0f!003+0f!003+0f!003+0f!003+0f!003+0f!003+0f!003+0f!003+0f!003+0f!003+0f!00f3+",
+  "autoFadeSpeed": 1,
+  "symbol": "scene_20",
+  "x": 216,
+  "y": 624,
+  "script": [],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "playerSpriteSheetId": "68702afd-4b67-4d10-98d0-d522886685da"
+}
