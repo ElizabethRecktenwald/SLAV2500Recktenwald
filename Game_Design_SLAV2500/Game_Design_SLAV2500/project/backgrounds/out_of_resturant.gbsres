@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "18b6a171-b995-456f-ac5f-60c5d0711736",
+  "name": "Out of Resturant",
+  "symbol": "bg_out_of_resturant",
+  "width": 80,
+  "height": 18,
+  "imageWidth": 640,
+  "imageHeight": 144,
+  "filename": "Out of Resturant.png",
+  "tileColors": "",
+  "autoColor": false
+}

@@ -1,0 +1,42 @@
+{
+  "_resourceType": "trigger",
+  "id": "f5152589-5c8d-42a9-8293-becce4b766ff",
+  "name": "",
+  "prefabId": "",
+  "x": 18,
+  "y": 4,
+  "symbol": "trigger_21",
+  "prefabScriptOverrides": {},
+  "width": 2,
+  "height": 2,
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Lavinia: This is a safe",
+          "Lavinia: I'll need \nsomething else in order\nto open it."
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "09eb9167-134c-4bcb-b3ef-402267ecb9ba"
+    }
+  ],
+  "leaveScript": [],
+  "_index": 1
+}
