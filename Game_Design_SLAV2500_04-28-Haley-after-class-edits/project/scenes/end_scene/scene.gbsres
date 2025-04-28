@@ -1,0 +1,115 @@
+{
+  "_resourceType": "scene",
+  "id": "f7e79591-77ce-400a-9012-973ddf94bdcb",
+  "_index": 16,
+  "name": "End Scene",
+  "backgroundId": "4602c49a-b531-4ef7-892f-32121755b49b",
+  "tilesetId": "",
+  "width": 20,
+  "height": 18,
+  "type": "POINTNCLICK",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "collisions": "",
+  "autoFadeSpeed": 3,
+  "symbol": "scene_17",
+  "x": 3528,
+  "y": 656,
+  "script": [
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "start",
+          "select"
+        ],
+        "override": true,
+        "__scriptTabs": "press"
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Congratulations\non saving Lavinia\nand completing our game.",
+                "Do you want \nto play again?"
+              ],
+              "__section": "text",
+              "avatarId": "",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": 3,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "b14e68ee-cb79-48d2-aa13-37b7f6fc1996"
+          },
+          {
+            "command": "EVENT_IF_INPUT",
+            "args": {
+              "input": [
+                "b"
+              ],
+              "__collapseElse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_SWITCH_SCENE",
+                  "args": {
+                    "sceneId": "2482c3db-8ad6-4512-9968-01ed2ae95569",
+                    "x": {
+                      "type": "number",
+                      "value": 0
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 0
+                    },
+                    "direction": "",
+                    "fadeSpeed": "2"
+                  },
+                  "id": "23f288e4-72d4-40fc-8b46-d3fb6dbc3808"
+                }
+              ],
+              "false": []
+            },
+            "id": "f7a3d5ef-58ba-4099-8893-189f317543fe"
+          },
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "2482c3db-8ad6-4512-9968-01ed2ae95569",
+              "x": {
+                "type": "number",
+                "value": 0
+              },
+              "y": {
+                "type": "number",
+                "value": 0
+              },
+              "direction": "",
+              "fadeSpeed": "2"
+            },
+            "id": "72c4ab7c-f089-494e-aa4d-8c634a3fef53"
+          }
+        ]
+      },
+      "id": "99a40de4-e3e7-448e-8abc-d147ab64b852"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "playerSpriteSheetId": "3bcc5463-269d-4bed-acf3-3c25efddd4b9"
+}

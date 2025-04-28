@@ -1,0 +1,106 @@
+{
+  "_resourceType": "scene",
+  "id": "0b0b9114-485d-4ef7-9688-853d19d2258b",
+  "_index": 13,
+  "name": "Garlic Field 1",
+  "backgroundId": "f2be02a0-d59f-4adc-9caf-e9a8a8a1c8a3",
+  "tilesetId": "",
+  "width": 80,
+  "height": 18,
+  "type": "PLATFORM",
+  "paletteIds": [
+    "dmg"
+  ],
+  "spritePaletteIds": [],
+  "collisions": "0f4f+0014c+102+003+0f4+004+0f4+001a+0f2+0023+102+003+0f4+004+0f4+001a+0f2+0020+0f3+102+0f3+001f+0f2+002+0f2+0026+102+0022+0f2+002+0f2+008+0f7+0017+102+001b+0f3+0030+102+0016+0f2+0036+102+0013+0f3+0038+102+0010+0f3+0028+0f4+00f+102+00c+0f4+002b+0f4+00f+102+00c+0f4+003d+0f4+0042+0ff+003+0f13+004+0f5+003+0fd+003+0f1e+003+0f13+004+0f5+003+0fd+003+0ff+",
+  "autoFadeSpeed": 1,
+  "symbol": "scene_14",
+  "x": 1967.0281761159608,
+  "y": 342.49695764437445,
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "variable",
+          "value": "74"
+        },
+        "__collapseElse": false,
+        "__collapse": false
+      },
+      "children": {
+        "true": [],
+        "false": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "You made it \nover the ocean!",
+                "You have reached land, \nand you must keep \ntrekking back towards\nTransylvania!",
+                "Keep a look out!\nThere is garlic being\nthrown that you \nmust avoid!"
+              ],
+              "__section": "text",
+              "avatarId": "",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30,
+              "__collapse": false
+            },
+            "id": "399fddb2-b717-4ddb-932f-82aef7d13eff"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "74",
+              "value": {
+                "type": "true"
+              }
+            },
+            "id": "10bc6b38-70d9-4bc1-a53c-6a8a49b7170f"
+          }
+        ]
+      },
+      "id": "4f3aad43-2585-4b93-8706-4109e0cc01d4"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [
+    {
+      "command": "EVENT_ACTOR_DEACTIVATE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "b3caa0ee-1359-491f-b8fc-21fdfd4dbfa1"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "0b0b9114-485d-4ef7-9688-853d19d2258b",
+        "x": {
+          "type": "number",
+          "value": 1
+        },
+        "y": {
+          "type": "number",
+          "value": 9
+        },
+        "direction": "",
+        "fadeSpeed": "2"
+      },
+      "id": "d11e669b-62ec-4538-9fd8-1b8d6c5d14b5"
+    }
+  ],
+  "playerSpriteSheetId": "f0b780c1-0821-449e-b0b0-a8ec3deab4d6"
+}

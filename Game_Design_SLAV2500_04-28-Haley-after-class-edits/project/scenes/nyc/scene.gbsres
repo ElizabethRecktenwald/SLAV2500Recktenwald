@@ -1,0 +1,113 @@
+{
+  "_resourceType": "scene",
+  "id": "74435f22-acec-4790-acb3-af14ada4ffa7",
+  "_index": 2,
+  "name": "NYC",
+  "backgroundId": "62e21e1c-476a-4dce-acea-0a2aee9384a2",
+  "tilesetId": "",
+  "width": 60,
+  "height": 18,
+  "type": "TOPDOWN",
+  "paletteIds": [
+    "325f5712-ff6c-40e7-b105-c6d795846783"
+  ],
+  "spritePaletteIds": [],
+  "collisions": "0f38+003+0f2+0034+0f3+003+0f2+0036+0f!003+0f2+0036+0f!003+0f2+0036+0f!003+0f2+0036+0f!003+0f2+0036+0f!003+0f2+0036+0f!003+0f2+0036+0f!003+0f6+00b+0f4+00e+0f3+005+0f4+007+0f3+003+0f3+002+0f!00b+0f!002+0f!00d+0f!002+0f!005+0f!002+0f!009+0f!003+0f3+002+0f!00b+0f!002+0f!00c+0f2+002+0f!005+0f!002+0f!006+0f!002+0f!003+0f3+002+0fd+002+0ff+002+0f7+002+0f8+002+0f!003+0f3+0039+0f2+003a+0f2+003a+0f2+003a+0f3d+",
+  "autoFadeSpeed": 1,
+  "symbol": "scene_20",
+  "x": 216,
+  "y": 624,
+  "script": [
+    {
+      "command": "EVENT_MUSIC_STOP",
+      "args": {},
+      "id": "822da3bd-78ea-47c8-b4a6-8d273cd2c055"
+    },
+    {
+      "command": "EVENT_MUSIC_PLAY",
+      "args": {
+        "musicId": "a7c68b7f-00bc-4872-9ce8-fe5e62f9b565"
+      },
+      "id": "8dc2ff29-1cf9-4ff3-a02a-92d6f1fa4d24"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Quick! Run away before \nchef catches you!"
+        ],
+        "__section": "behavior",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "any",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "9bb56c05-b196-40a7-9015-0dbb4ef9dcbf"
+    }
+  ],
+  "playerHit1Script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Found you!"
+        ],
+        "__section": "behavior",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "any",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "038b16bd-7864-47dd-85af-5ee1574de349"
+    },
+    {
+      "command": "EVENT_ACTOR_DEACTIVATE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "6ff9a31d-f4cd-46e9-81f7-cae7dcb06569"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "863d52f1-0c23-4f91-ae0b-90373375c8c6",
+        "x": {
+          "type": "number",
+          "value": 10
+        },
+        "y": {
+          "type": "number",
+          "value": 4
+        },
+        "direction": "",
+        "fadeSpeed": "2"
+      },
+      "id": "39c0c784-502e-4414-ab73-592d98f1b68e"
+    }
+  ],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "playerSpriteSheetId": "68702afd-4b67-4d10-98d0-d522886685da"
+}
