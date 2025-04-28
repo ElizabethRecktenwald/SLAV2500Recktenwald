@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "4602c49a-b531-4ef7-892f-32121755b49b",
+  "name": "sky copy",
+  "symbol": "bg_sky_copy",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "filename": "sky copy.png",
+  "tileColors": "",
+  "autoColor": false
+}

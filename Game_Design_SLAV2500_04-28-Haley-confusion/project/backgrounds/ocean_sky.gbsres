@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "544e68e8-2f3c-43d0-85c1-658614dc0049",
+  "name": "ocean_sky",
+  "symbol": "bg_ocean_sky",
+  "width": 120,
+  "height": 18,
+  "imageWidth": 960,
+  "imageHeight": 144,
+  "filename": "ocean_sky.png",
+  "tileColors": "",
+  "autoColor": false
+}

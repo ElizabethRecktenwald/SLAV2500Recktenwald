@@ -1,0 +1,12 @@
+{
+  "_resourceType": "background",
+  "id": "4f1a6b32-e0ef-4189-98fa-9d499245526a",
+  "name": "road_end",
+  "symbol": "bg_road_end",
+  "width": 80,
+  "height": 18,
+  "imageWidth": 640,
+  "imageHeight": 144,
+  "filename": "road_end.png",
+  "tileColors": ""
+}

@@ -1,0 +1,172 @@
+{
+  "_resourceType": "scene",
+  "id": "41f52c56-381e-4a2a-8d6c-8eee9e86214b",
+  "_index": 10,
+  "type": "TOPDOWN",
+  "name": "Scene 11",
+  "symbol": "scene_11",
+  "x": 336,
+  "y": 72,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "ec2883a6-7a5d-4393-b884-3ae79f0d34eb",
+  "tilesetId": "",
+  "paletteIds": [
+    "c2af2d33-8fcb-4a07-b9a0-15d6b7a98767",
+    "444c886c-6214-48d7-8e3c-4dca4f65dec7",
+    "9fb1f41b-54d4-43c6-8731-16de50176aa0",
+    "",
+    "",
+    "",
+    "default-bg-1",
+    "dmg"
+  ],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_ACTOR_HIDE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "083421ad-d2d7-45fd-bb5b-8a31d2b63238"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "18",
+        "value": {
+          "type": "false"
+        }
+      },
+      "id": "b4d51f4f-0322-433e-8006-82e15ac9634f"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "23",
+        "value": {
+          "type": "false"
+        }
+      },
+      "id": "491008aa-b3b2-48e4-97dc-c6912ee89265"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "19",
+        "value": {
+          "type": "false"
+        }
+      },
+      "id": "58f82cb1-e62e-4c1a-afa1-3e1802c7f6a2"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "20",
+        "value": {
+          "type": "false"
+        }
+      },
+      "id": "38648c5d-2c8d-4442-925c-1fcad87c4d15"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "21",
+        "value": {
+          "type": "false"
+        }
+      },
+      "id": "03228210-5fda-4cd2-a8c0-e29dd5fb1530"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "22",
+        "value": {
+          "type": "false"
+        }
+      },
+      "id": "abea8c51-4842-422b-ac8c-3dda18109c33"
+    },
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "select",
+          "start"
+        ],
+        "override": false,
+        "__scriptTabs": "press"
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Welcome to Return to\nTransylvania!",
+                "Our story begins with \nvampire Lavinia, who is \nin danger in NYC \nafter running away \nfrom her family in \nTransylvania.",
+                "After making it to \nNYC, she fell into the \nwrong crowd, since \nshe could only come \nout at night. ",
+                "Lavinia was having a \nnice night out with\nthe  gals and had a \nlittle too much to \ndrink...",
+                "when suddenly, the\nsun began to rise!!...",
+                "They discovered she \nwas a vampire!!!",
+                "As punishment, she \nhas been locked up \nin an Italian \nrestaurant\nand forced to work.",
+                "The police put an ankle\nmonitor on her to \nmake sure she can't\ngo far.",
+                "Help Lavinia escape \nItalian Restaurant \nCiao Osteria!!!\nOr else....!"
+              ],
+              "__section": "text",
+              "avatarId": "6845dca5-d9d8-472a-93a7-81889d878516",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "text",
+              "closeButton": "any",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "205ad851-367b-41ae-ab21-a39d50c08665"
+          },
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "863d52f1-0c23-4f91-ae0b-90373375c8c6",
+              "x": {
+                "type": "number",
+                "value": 9
+              },
+              "y": {
+                "type": "number",
+                "value": 9
+              },
+              "direction": "",
+              "fadeSpeed": "2"
+            },
+            "id": "1d03c297-5767-4af1-bffa-885f8eb2230f"
+          }
+        ]
+      },
+      "id": "fe1713ac-7665-4c45-bd5c-0f2a0ab3bb02"
+    },
+    {
+      "command": "EVENT_MUSIC_PLAY",
+      "args": {
+        "musicId": "70bab38b-5731-4805-bd70-0a7ee62b750d"
+      },
+      "id": "a28ff65a-468d-478a-aaae-f10bcb891398"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": ""
+}

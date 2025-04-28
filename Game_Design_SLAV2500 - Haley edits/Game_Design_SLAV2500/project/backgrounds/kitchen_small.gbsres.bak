@@ -1,0 +1,12 @@
+{
+  "_resourceType": "background",
+  "id": "faede9a4-9d5c-418e-a51c-f278e7cc9a84",
+  "name": "kitchen Small",
+  "symbol": "bg_kitchen_small",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "filename": "kitchen Small.png",
+  "tileColors": ""
+}

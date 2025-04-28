@@ -1,0 +1,179 @@
+{
+  "_resourceType": "trigger",
+  "id": "8e7e158d-7314-4879-b136-a55deddee6b8",
+  "name": "",
+  "prefabId": "",
+  "x": 1,
+  "y": 8,
+  "symbol": "trigger_25",
+  "prefabScriptOverrides": {},
+  "width": 2,
+  "height": 2,
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "and",
+          "valueA": {
+            "type": "variable",
+            "value": "19"
+          },
+          "valueB": {
+            "type": "variable",
+            "value": "20"
+          }
+        },
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "22"
+                },
+                "valueB": {
+                  "type": "false"
+                }
+              },
+              "__collapseElse": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "21",
+                    "value": {
+                      "type": "true"
+                    }
+                  },
+                  "id": "07a975c2-5834-4947-9286-53b716aff343"
+                }
+              ],
+              "false": [
+                {
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "19",
+                    "value": {
+                      "type": "false"
+                    }
+                  },
+                  "id": "208a1132-ff12-4d42-8493-5dddf3ebeb7f"
+                },
+                {
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "20",
+                    "value": {
+                      "type": "false"
+                    }
+                  },
+                  "id": "b85d7b54-1113-4b5a-adec-46d322864fac"
+                },
+                {
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "21",
+                    "value": {
+                      "type": "false"
+                    }
+                  },
+                  "id": "85603b94-2bc8-417b-99fe-4a8b805fb452"
+                },
+                {
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "22",
+                    "value": {
+                      "type": "false"
+                    }
+                  },
+                  "id": "22e99205-6cac-4989-88f5-7ac52bf3f783"
+                }
+              ]
+            },
+            "id": "05085d59-78b1-4e39-853c-522db341f795"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "19",
+              "value": {
+                "type": "false"
+              }
+            },
+            "id": "00cbe77e-a7d3-4988-b4de-bfb53ccc1f7d"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "20",
+              "value": {
+                "type": "false"
+              }
+            },
+            "id": "7c3da991-0545-41f0-9454-194471e2c244"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "21",
+              "value": {
+                "type": "false"
+              }
+            },
+            "id": "072d02fc-4121-4e0d-a82e-0393661c7573"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "22",
+              "value": {
+                "type": "false"
+              }
+            },
+            "id": "3e4afafe-7646-4187-810e-d1c4a5207be0"
+          }
+        ]
+      },
+      "id": "28895edd-0e40-4ac9-b6d6-b115122784d8"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "A book! I sure do love \nto READ books like The\nGreat Batsby."
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "any",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30,
+        "__collapse": false
+      },
+      "id": "4366c1fe-2df1-42f7-a1a7-ad92010d2989"
+    }
+  ],
+  "leaveScript": [],
+  "_index": 2
+}

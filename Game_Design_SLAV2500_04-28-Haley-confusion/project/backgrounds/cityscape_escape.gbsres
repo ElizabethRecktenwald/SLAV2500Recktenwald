@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "0fb2e67b-32d9-4107-b836-56e9c61a21d0",
+  "name": "cityScape_Escape",
+  "symbol": "bg_cityscape_escape",
+  "width": 60,
+  "height": 18,
+  "imageWidth": 480,
+  "imageHeight": 144,
+  "filename": "cityScape_Escape.png",
+  "tileColors": "",
+  "autoColor": false
+}

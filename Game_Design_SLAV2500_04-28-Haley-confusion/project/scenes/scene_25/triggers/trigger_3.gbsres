@@ -1,0 +1,44 @@
+{
+  "_resourceType": "trigger",
+  "id": "510e6d7f-cdcc-4038-8495-29b981b5de79",
+  "name": "",
+  "prefabId": "",
+  "x": 0,
+  "y": 14,
+  "symbol": "trigger_22",
+  "prefabScriptOverrides": {},
+  "width": 2,
+  "height": 2,
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "It appears to be a clue\nto open the safe! Let's\nread what it says...",
+          "\"This safe I got is so \nweird, so I need to write\ndown how to open it so I",
+          "don't forget. Apparently\nI need to PLAY, SING,\nREAD, and DRINK in that",
+          "exact order... Gah I \nshould stop buying \nthings off of Temula.\""
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "any",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "87ebf0b0-c125-4cab-b1e6-be31166601c2"
+    }
+  ],
+  "leaveScript": [],
+  "_index": 2
+}

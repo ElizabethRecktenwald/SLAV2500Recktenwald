@@ -1,0 +1,104 @@
+{
+  "_resourceType": "scene",
+  "id": "41f52c56-381e-4a2a-8d6c-8eee9e86214b",
+  "_index": 10,
+  "name": "Scene 11",
+  "backgroundId": "508646dc-42a5-4813-8805-a1d4968929a7",
+  "tilesetId": "",
+  "width": 20,
+  "height": 18,
+  "type": "TOPDOWN",
+  "paletteIds": [
+    "c2af2d33-8fcb-4a07-b9a0-15d6b7a98767",
+    "444c886c-6214-48d7-8e3c-4dca4f65dec7",
+    "9fb1f41b-54d4-43c6-8731-16de50176aa0",
+    null,
+    null,
+    null,
+    "default-bg-1",
+    "dmg"
+  ],
+  "spritePaletteIds": [],
+  "collisions": "",
+  "autoFadeSpeed": 1,
+  "symbol": "scene_11",
+  "x": 336,
+  "y": 72,
+  "script": [
+    {
+      "command": "EVENT_ACTOR_HIDE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "083421ad-d2d7-45fd-bb5b-8a31d2b63238"
+    },
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "select",
+          "start"
+        ],
+        "override": false,
+        "__scriptTabs": "press"
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Tutorial Placeholder",
+                "Lavinia is in danger in\nNYC",
+                "She was having a nice\nnight out with the gals",
+                "when suddenly...",
+                "They discovered she \nwas a vampire!!!",
+                "As punishment, she \nhas been locked up in ",
+                "an Italian restaurant\nand forced to work.",
+                "Help Lavinia escape!!!\nOr else....!"
+              ],
+              "__section": "behavior",
+              "avatarId": "6845dca5-d9d8-472a-93a7-81889d878516",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "text",
+              "closeButton": "any",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "205ad851-367b-41ae-ab21-a39d50c08665"
+          },
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "863d52f1-0c23-4f91-ae0b-90373375c8c6",
+              "x": {
+                "type": "number",
+                "value": 9
+              },
+              "y": {
+                "type": "number",
+                "value": 12
+              },
+              "direction": "",
+              "fadeSpeed": "2"
+            },
+            "id": "1d03c297-5767-4af1-bffa-885f8eb2230f"
+          }
+        ]
+      },
+      "id": "fe1713ac-7665-4c45-bd5c-0f2a0ab3bb02"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": []
+}
