@@ -1,0 +1,12 @@
+{
+  "_resourceType": "background",
+  "id": "f2be02a0-d59f-4adc-9caf-e9a8a8a1c8a3",
+  "name": "grass scene",
+  "symbol": "bg_grass_scene",
+  "width": 80,
+  "height": 18,
+  "imageWidth": 640,
+  "imageHeight": 144,
+  "filename": "grass scene.png",
+  "tileColors": ""
+}

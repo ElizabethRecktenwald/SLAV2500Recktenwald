@@ -1,0 +1,12 @@
+{
+  "_resourceType": "background",
+  "id": "4c72823c-b1c2-4951-9f5a-152fefc5a8ef",
+  "name": "safe_crack",
+  "symbol": "bg_safe_crack",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "filename": "safe_crack.png",
+  "tileColors": ""
+}

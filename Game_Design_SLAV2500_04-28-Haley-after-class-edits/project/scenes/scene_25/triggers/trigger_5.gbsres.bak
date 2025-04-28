@@ -1,0 +1,41 @@
+{
+  "_resourceType": "trigger",
+  "id": "f4a5a23e-2236-4fb0-b8dd-d81322eca348",
+  "name": "",
+  "prefabId": "",
+  "x": 14,
+  "y": 10,
+  "symbol": "trigger_24",
+  "prefabScriptOverrides": {},
+  "width": 2,
+  "height": 3,
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Safe Door!"
+        ],
+        "__section": "behavior",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "any",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "3942d9c0-6000-402e-9e1e-f14f3541a98c"
+    }
+  ],
+  "leaveScript": [],
+  "_index": 4
+}

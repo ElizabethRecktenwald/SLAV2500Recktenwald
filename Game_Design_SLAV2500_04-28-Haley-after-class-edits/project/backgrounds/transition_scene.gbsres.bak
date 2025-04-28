@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "ec2883a6-7a5d-4393-b884-3ae79f0d34eb",
+  "name": "Transition Scene",
+  "symbol": "bg_transition_scene",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "filename": "Transition Scene.png",
+  "tileColors": "",
+  "autoColor": false
+}

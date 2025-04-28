@@ -1,0 +1,91 @@
+{
+  "_resourceType": "scene",
+  "id": "e75fa32d-7883-4cf2-baf4-251bda931791",
+  "_index": 3,
+  "name": "Scene 21",
+  "backgroundId": "ac3e08e0-4aff-42ca-a905-ae98db302edd",
+  "tilesetId": "",
+  "width": 80,
+  "height": 18,
+  "type": "TOPDOWN",
+  "paletteIds": [
+    "78b1f1eb-13ad-4822-b109-8a693bae141c"
+  ],
+  "spritePaletteIds": [],
+  "collisions": "0f51+002+0f!00!0f!00!0f!00!0f!00!0f!00!0f!00!0f!00!0f!00!0f!00!0f!00!0f!00!0f!00!0f!00!0f!00!0f!00!0f!00!0f!00!0f!00!0f!00!0f!00!0f!00!0f!00!0f!00!0f!00!0f!00!0f!00!0f!00!0f!00!0f!00!0f!00!0f!00!0f!00!0f!00!0f!00!0f!00!0f!00!0f!00!0f!00!0f!001e3+0f!00!0f!00!0f!00!0f!00!0f!00!0f!00!0f!003+0f!00!0f!00!0f!00!0f!00!0f!00!0f!00!0f!00!0f!00!0f!00!0f!00!0f!00!0f!00!0f!00!0f!00!0f!005+0f!00!0f!00!0f!00!0f!00!0f!00!0f!00!0f!00!0f!005+0f!00!0f!00!0f!004+0f!00!0f!00!0f!00!0f!00!0f!00!0f!00!0f!005+0f!00!0f!00!0f!00!0f!00!0f!00!0f!00!0f!00!0f!00!0f!00!0f!00!0f!00!0f!00!0f!00!0f!00!0f!003+0f!00!0f!00!0f!00!0f!00!0f!00!0f!00!0f!00!0f!00!0f!005+0f!00!0f!00!0f!00a8+01!0057+01!00e3+0f!00!0f!00!0f!00!0f!00!0f!00!0f!00!0f!00!0f!00!0f!00!0f!00!0f!00!0f!00!0f!00!0f!00!0f!00!0f!00!0f!00!0f!00!0f!00!0f!00!0f!00!0f!00!0f!00!0f!00!0f!00!0f!00!0f!00!0f!00!0f!00!0f!00!0f!00!0f!00!0f!00!0f!00!0f!00!0f!00!0f!00!0f!00!0f!002+0f4e+",
+  "autoFadeSpeed": 1,
+  "symbol": "scene_21",
+  "x": 696,
+  "y": 112,
+  "script": [
+    {
+      "command": "EVENT_MUSIC_STOP",
+      "args": {},
+      "id": "8067ce18-98e5-4598-8b68-1610c489da3d"
+    },
+    {
+      "command": "EVENT_MUSIC_PLAY",
+      "args": {
+        "musicId": "bf583c82-ca74-42e5-8576-d457e45faad3"
+      },
+      "id": "4e60be0a-2442-4e0e-a1ac-6546c240009c"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "variable",
+          "value": "78"
+        },
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [],
+        "false": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "NICE WORK",
+                "You are now on the busy\nNYC streets!!",
+                "You must avoid each \nvehicle to make it out\nalive! Good luck!!"
+              ],
+              "__section": "text",
+              "avatarId": "",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "any",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "dad15667-afd6-41df-9e6f-ff13ab6f510f"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "78",
+              "value": {
+                "type": "true"
+              }
+            },
+            "id": "eb916646-e1ad-44e2-b7fb-2f154497122e"
+          }
+        ]
+      },
+      "id": "a0b6a2a2-a52d-4b11-9648-5b831978df03"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "playerSpriteSheetId": "68702afd-4b67-4d10-98d0-d522886685da"
+}

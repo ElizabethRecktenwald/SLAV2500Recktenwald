@@ -1,0 +1,54 @@
+{
+  "_resourceType": "scene",
+  "id": "0b0b9114-485d-4ef7-9688-853d19d2258b",
+  "_index": 13,
+  "name": "Scene 14",
+  "backgroundId": "f2be02a0-d59f-4adc-9caf-e9a8a8a1c8a3",
+  "tilesetId": "",
+  "width": 80,
+  "height": 18,
+  "type": "PLATFORM",
+  "paletteIds": [
+    "dmg"
+  ],
+  "spritePaletteIds": [],
+  "collisions": "0f4f+00!0f!004f+0f!004f+0f!004f+0f!004f+0f!00a+102+003+0f4+004+0f4+001a+0f2+0018+0f!00a+102+003+0f4+004+0f4+001a+0f2+0018+0f!007+0f3+102+0f3+001f+0f2+002+0f2+001b+0f!00a+102+0022+0f2+002+0f2+008+0f7+00c+0f!00a+102+001b+0f3+0025+0f!00a+102+0016+0f2+002b+0f!00a+102+0013+0f3+002d+0f!00a+102+0010+0f3+0028+0f4+00f+102+00c+0f4+002b+0f4+00f+102+00c+0f4+003d+0f4+0042+0ff+003+0f13+004+0f5+003+0fd+003+0f1e+003+0f13+004+0f5+003+0fd+003+0ff+",
+  "autoFadeSpeed": 1,
+  "symbol": "scene_14",
+  "x": 1967.0281761159608,
+  "y": 342.49695764437445,
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "You made it \nover the ocean!",
+          "You have reached land, \nand you must keep \ntrekking back towards\nTransylvania!",
+          "Keep a look out!\nThere is garlic being\nthrown that you \nmust avoid!"
+        ],
+        "__section": "behavior",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30,
+        "__collapse": false
+      },
+      "id": "399fddb2-b717-4ddb-932f-82aef7d13eff"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "playerSpriteSheetId": "f0b780c1-0821-449e-b0b0-a8ec3deab4d6"
+}
