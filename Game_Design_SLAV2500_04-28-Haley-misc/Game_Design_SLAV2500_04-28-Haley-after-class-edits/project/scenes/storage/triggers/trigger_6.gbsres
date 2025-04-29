@@ -1,0 +1,178 @@
+{
+  "_resourceType": "trigger",
+  "id": "2dd53f55-7511-44d6-b156-ebf54dde93d2",
+  "name": "",
+  "prefabId": "",
+  "x": 4,
+  "y": 0,
+  "symbol": "trigger_44",
+  "prefabScriptOverrides": {},
+  "width": 3,
+  "height": 3,
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "and",
+          "valueA": {
+            "type": "variable",
+            "value": "19"
+          },
+          "valueB": {
+            "type": "variable",
+            "value": "20"
+          }
+        },
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "21"
+                },
+                "valueB": {
+                  "type": "true"
+                }
+              },
+              "__collapseElse": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "22",
+                    "value": {
+                      "type": "true"
+                    }
+                  },
+                  "id": "e4e61ead-9506-41fd-bbfa-209a04b00a11"
+                }
+              ],
+              "false": [
+                {
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "19",
+                    "value": {
+                      "type": "false"
+                    }
+                  },
+                  "id": "a2853bf3-c8ce-4457-afe6-0cdcea5ab774"
+                },
+                {
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "20",
+                    "value": {
+                      "type": "false"
+                    }
+                  },
+                  "id": "b2a52313-1613-4b9e-93a9-095aa553762a"
+                },
+                {
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "21",
+                    "value": {
+                      "type": "false"
+                    }
+                  },
+                  "id": "6a9e3642-b6fd-4d68-ab39-59b26d149914"
+                },
+                {
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "22",
+                    "value": {
+                      "type": "false"
+                    }
+                  },
+                  "id": "dc070d40-a5aa-40bb-b549-f716dd16f544"
+                }
+              ]
+            },
+            "id": "2e86a9ac-0e40-44c4-b1d3-5db7830ad8f8"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "19",
+              "value": {
+                "type": "false"
+              }
+            },
+            "id": "e687e1dc-16cd-4593-8c28-6219b80d10e5"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "20",
+              "value": {
+                "type": "false"
+              }
+            },
+            "id": "08f71b4e-3720-4bb9-9e3a-d5d64b6829d5"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "21",
+              "value": {
+                "type": "false"
+              }
+            },
+            "id": "a2172efa-42a4-4358-9bae-b174a4598a40"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "22",
+              "value": {
+                "type": "false"
+              }
+            },
+            "id": "08bdb13b-a082-4a1a-a9fd-9ac3277194d7"
+          }
+        ]
+      },
+      "id": "e0cc2434-a586-45bb-b454-fcfa700c220a"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "A vending machine! \nBesides blood, I love to\nDRINK soda like Dracola."
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "b26c30ed-d9c1-4469-bd2f-a0fa9d34fcec"
+    }
+  ],
+  "leaveScript": [],
+  "_index": 5
+}

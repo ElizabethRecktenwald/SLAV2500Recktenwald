@@ -1,0 +1,167 @@
+{
+  "_resourceType": "actor",
+  "id": "671a3284-8352-46df-86ef-368da91cb487",
+  "name": "",
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "b4845aec-11e3-475b-8a9a-0a01b920c710",
+  "prefabId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "paletteId": "",
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "symbol": "actor_21",
+  "script": [],
+  "startScript": [],
+  "updateScript": [
+    {
+      "command": "EVENT_LAUNCH_PROJECTILE",
+      "args": {
+        "__section": "projectile",
+        "spriteSheetId": "04668069-8fbb-4377-9c51-64a7558c7b1e",
+        "spriteStateId": "",
+        "actorId": "$self$",
+        "x": 0,
+        "y": 0,
+        "directionType": "target",
+        "otherActorId": "$self$",
+        "direction": "right",
+        "angle": 0,
+        "angleVariable": "L0",
+        "targetActorId": "player",
+        "initialOffset": 0,
+        "speed": 2,
+        "animSpeed": 15,
+        "lifeTime": 1,
+        "loopAnim": true,
+        "destroyOnHit": true,
+        "collisionGroup": "3",
+        "collisionMask": [
+          "player"
+        ],
+        "__collapse": false
+      },
+      "id": "ee27edd6-4e82-445b-bb8f-d5b610a9412e"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "lt",
+          "valueA": {
+            "type": "variable",
+            "value": "22"
+          },
+          "valueB": {
+            "type": "variable",
+            "value": "24"
+          }
+        },
+        "__collapseElse": true,
+        "__label": "Move Right",
+        "__disableElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_MOVE_RELATIVE",
+            "args": {
+              "actorId": "$self$",
+              "x": {
+                "type": "number",
+                "value": -3
+              },
+              "y": {
+                "type": "number",
+                "value": 0
+              },
+              "moveType": "horizontal",
+              "useCollisions": false
+            },
+            "id": "22a8f9a1-8a74-4396-980b-711f8a5145bc"
+          }
+        ],
+        "false": []
+      },
+      "id": "6146273b-0311-456c-97f8-52e763c25ff9"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "gt",
+          "valueA": {
+            "type": "variable",
+            "value": "22"
+          },
+          "valueB": {
+            "type": "variable",
+            "value": "24"
+          }
+        },
+        "__collapseElse": true,
+        "__label": "Move Right",
+        "__disableElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_MOVE_RELATIVE",
+            "args": {
+              "actorId": "$self$",
+              "x": {
+                "type": "number",
+                "value": 3
+              },
+              "y": {
+                "type": "number",
+                "value": 0
+              },
+              "moveType": "horizontal",
+              "useCollisions": false
+            },
+            "id": "866b79d8-320f-47d2-8a3b-91c9b44ab4a5"
+          }
+        ],
+        "false": []
+      },
+      "id": "1473648e-1385-4197-b222-444f417d1cee"
+    },
+    {
+      "command": "EVENT_ACTOR_GET_POSITION",
+      "args": {
+        "actorId": "player",
+        "vectorX": "22",
+        "vectorY": "23"
+      },
+      "id": "17bddc93-dff4-4ca4-984b-ea6a29ecabc6"
+    },
+    {
+      "command": "EVENT_ACTOR_GET_POSITION",
+      "args": {
+        "actorId": "$self$",
+        "vectorX": "24",
+        "vectorY": "25"
+      },
+      "id": "5d2eb98d-cddb-4642-a54b-c78df5a3b5d5"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 0.7,
+        "frames": 30
+      },
+      "id": "635eff0c-8af0-4915-a752-ea97178f74cf"
+    }
+  ],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": [],
+  "x": 36,
+  "y": 1,
+  "_index": 1
+}

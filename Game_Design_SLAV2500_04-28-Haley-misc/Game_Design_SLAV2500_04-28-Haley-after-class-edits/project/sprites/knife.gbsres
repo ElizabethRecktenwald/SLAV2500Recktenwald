@@ -1,0 +1,151 @@
+{
+  "_resourceType": "sprite",
+  "id": "ab977081-af9c-4a59-a53c-3c30dab4b0b5",
+  "name": "knife",
+  "symbol": "sprite_knife",
+  "numFrames": 1.5,
+  "filename": "knife.png",
+  "checksum": "7b322aac137169936dac60370edd7711db4a3057",
+  "width": 24,
+  "height": 8,
+  "states": [
+    {
+      "id": "96a29bc2-219a-4a01-ae1d-1787c044fa22",
+      "name": "",
+      "animationType": "fixed",
+      "flipLeft": true,
+      "animations": [
+        {
+          "id": "51a0345a-38be-479e-8b3d-df9bac2859f4",
+          "frames": [
+            {
+              "id": "86d9fe12-eddd-4305-b36c-5dc838bf8965",
+              "tiles": [
+                {
+                  "id": "54bf59a5-8ba8-4dcd-b5aa-020da601fa59",
+                  "x": 4,
+                  "y": 0,
+                  "sliceX": 0,
+                  "sliceY": -8,
+                  "palette": 0,
+                  "flipX": false,
+                  "flipY": false,
+                  "objPalette": "OBP0",
+                  "paletteIndex": 0,
+                  "priority": false
+                }
+              ]
+            },
+            {
+              "id": "51b14d6f-6f64-4d06-be48-198b4fbbd690",
+              "tiles": [
+                {
+                  "id": "27477e24-1dec-4d2b-8ebc-d26c057c97c2",
+                  "x": 4,
+                  "y": 0,
+                  "sliceX": 8,
+                  "sliceY": -8,
+                  "palette": 0,
+                  "flipX": false,
+                  "flipY": false,
+                  "objPalette": "OBP0",
+                  "paletteIndex": 0,
+                  "priority": false
+                }
+              ]
+            },
+            {
+              "id": "8cc14522-0846-471a-8915-45725e54003f",
+              "tiles": [
+                {
+                  "id": "42e28365-6207-4396-bc99-6392f858dc16",
+                  "x": 3,
+                  "y": 0,
+                  "sliceX": 16,
+                  "sliceY": -8,
+                  "palette": 0,
+                  "flipX": false,
+                  "flipY": false,
+                  "objPalette": "OBP0",
+                  "paletteIndex": 0,
+                  "priority": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "8121d9aa-3e62-4462-8320-1de142569983",
+          "frames": [
+            {
+              "id": "ccb0fcfb-1ff3-4e37-aa22-25d949a1a57e",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "f25320e9-7366-4cbd-ae44-e562231f5526",
+          "frames": [
+            {
+              "id": "6fe2c0c5-c61b-4c7a-9de3-cdea39214cf3",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "4593c1a5-5cbb-4eb2-900a-740069bceff8",
+          "frames": [
+            {
+              "id": "9deb2fae-29e4-45f4-a5e8-9d1b6a2eb268",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "49ad23a1-c5a3-4464-adae-b6f23a97e9e7",
+          "frames": [
+            {
+              "id": "a93340cc-59b7-4311-92ab-d3bfde1e0dcd",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "ac90e037-06d9-4d00-9290-1ccb34e48096",
+          "frames": [
+            {
+              "id": "44f5c23e-aaa4-417e-a623-41363d828d05",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "948df1e3-59ac-4d3f-b3ba-36ead1edc3dc",
+          "frames": [
+            {
+              "id": "47aa649e-8ced-42d6-96e4-7ad309c2a858",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "159fe975-305b-41d7-972e-aeeb87e5259d",
+          "frames": [
+            {
+              "id": "177cd0c3-c66e-40f8-b0e6-43e6aba079e6",
+              "tiles": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "numTiles": 3,
+  "canvasWidth": 16,
+  "canvasHeight": 16,
+  "boundsX": 0,
+  "boundsY": 0,
+  "boundsWidth": 16,
+  "boundsHeight": 16,
+  "animSpeed": 15
+}

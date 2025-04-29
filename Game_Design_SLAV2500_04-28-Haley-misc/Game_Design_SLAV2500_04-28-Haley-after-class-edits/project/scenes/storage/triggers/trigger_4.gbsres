@@ -1,0 +1,81 @@
+{
+  "_resourceType": "trigger",
+  "id": "5be866ff-579d-4d90-b176-a24aafc0869d",
+  "name": "",
+  "prefabId": "",
+  "x": 9,
+  "y": 16,
+  "symbol": "trigger_23",
+  "prefabScriptOverrides": {},
+  "width": 1,
+  "height": 1,
+  "script": [
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "19",
+        "value": {
+          "type": "true"
+        }
+      },
+      "id": "b715120b-245a-4723-a468-4e58310e88f9"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "20",
+        "value": {
+          "type": "false"
+        }
+      },
+      "id": "6393b41b-e8d9-4285-8169-b9f7079b488a"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "21",
+        "value": {
+          "type": "false"
+        }
+      },
+      "id": "6f8a48f1-d155-4949-8ad5-93ed88879f3e"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "22",
+        "value": {
+          "type": "false"
+        }
+      },
+      "id": "719cd30f-0711-46e6-ac63-dea72d686ecc"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "A video game! I love to \nPLAY video games like \nNeed for Bleed."
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "any",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "38e709a6-4e97-4e7e-97a5-8dad5eac799e"
+    }
+  ],
+  "leaveScript": [],
+  "_index": 3
+}

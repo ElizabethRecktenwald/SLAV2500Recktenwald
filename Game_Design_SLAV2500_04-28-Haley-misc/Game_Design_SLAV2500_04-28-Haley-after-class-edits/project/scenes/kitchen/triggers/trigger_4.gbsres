@@ -1,0 +1,181 @@
+{
+  "_resourceType": "trigger",
+  "id": "bf253fcd-d478-4f60-a6c5-b56f59474130",
+  "name": "",
+  "prefabId": "",
+  "x": 18,
+  "y": 8,
+  "symbol": "trigger_43",
+  "prefabScriptOverrides": {},
+  "width": 2,
+  "height": 2,
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "and",
+          "valueA": {
+            "type": "variable",
+            "value": "19"
+          },
+          "valueB": {
+            "type": "not",
+            "value": {
+              "type": "variable",
+              "value": "21"
+            }
+          }
+        },
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "22"
+                },
+                "valueB": {
+                  "type": "false"
+                }
+              },
+              "__collapseElse": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "20",
+                    "value": {
+                      "type": "true"
+                    }
+                  },
+                  "id": "9c256980-2503-4a13-9efb-baafbe98d7a9"
+                }
+              ],
+              "false": [
+                {
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "19",
+                    "value": {
+                      "type": "false"
+                    }
+                  },
+                  "id": "5349db82-21d6-426d-9ac7-53b6b6976306"
+                },
+                {
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "20",
+                    "value": {
+                      "type": "false"
+                    }
+                  },
+                  "id": "df4ee247-16c1-4983-8a8a-33f9b6292e25"
+                },
+                {
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "21",
+                    "value": {
+                      "type": "false"
+                    }
+                  },
+                  "id": "9e297d7e-dbe6-4519-a2a2-bafbf24e5d98"
+                },
+                {
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "22",
+                    "value": {
+                      "type": "false"
+                    }
+                  },
+                  "id": "27f7bf16-3672-4301-b084-814953742b6e"
+                }
+              ]
+            },
+            "id": "3b76707c-470b-4907-9a7f-8b79fc045801"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "19",
+              "value": {
+                "type": "false"
+              }
+            },
+            "id": "7e263c03-07af-4d80-8801-9c2674184a7d"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "20",
+              "value": {
+                "type": "false"
+              }
+            },
+            "id": "6fde6b5f-5b66-4fe5-bfe9-23578a4e3af0"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "21",
+              "value": {
+                "type": "false"
+              }
+            },
+            "id": "7c0c2c6d-8107-44e1-9cf4-f079a6042fb9"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "22",
+              "value": {
+                "type": "false"
+              }
+            },
+            "id": "02d301d3-81ad-42d8-b3d0-50a05bd4c044"
+          }
+        ]
+      },
+      "id": "4307fbfe-d5a4-47b1-9c0b-61d6b39288e4"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "A radio! I love to SING\nsongs by my favorite\nartist Fanglor Swift <3"
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "d912307b-d25b-4a73-b214-a1f9c122ab14"
+    }
+  ],
+  "leaveScript": [],
+  "_index": 3
+}

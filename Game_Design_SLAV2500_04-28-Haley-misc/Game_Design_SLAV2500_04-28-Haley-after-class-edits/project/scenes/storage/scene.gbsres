@@ -1,0 +1,23 @@
+{
+  "_resourceType": "scene",
+  "id": "ed15c5de-13d9-4861-be9b-bf24da9e0f07",
+  "_index": 7,
+  "name": "Storage",
+  "backgroundId": "9c200913-d536-4474-9ef8-12d2744cc197",
+  "tilesetId": "",
+  "width": 20,
+  "height": 18,
+  "type": "TOPDOWN",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "collisions": "008+0f!002+0f!0013+0f!0013+0f!0013+0f!0013+0f!006+0f2+00b+0f9+00b+0f!0013+0f!0013+0f!0013+0f!0013+0f3+002+0f4+0016+04!02!0074+",
+  "autoFadeSpeed": 1,
+  "symbol": "scene_25",
+  "x": 136,
+  "y": 280,
+  "script": [],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "playerSpriteSheetId": "f0b780c1-0821-449e-b0b0-a8ec3deab4d6"
+}

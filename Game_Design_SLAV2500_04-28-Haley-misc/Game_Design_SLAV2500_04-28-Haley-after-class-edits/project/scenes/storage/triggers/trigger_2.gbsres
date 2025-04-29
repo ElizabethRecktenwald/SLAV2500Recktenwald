@@ -1,0 +1,155 @@
+{
+  "_resourceType": "trigger",
+  "id": "f5152589-5c8d-42a9-8293-becce4b766ff",
+  "name": "",
+  "prefabId": "",
+  "x": 18,
+  "y": 4,
+  "symbol": "trigger_21",
+  "prefabScriptOverrides": {},
+  "width": 2,
+  "height": 2,
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "and",
+          "valueA": {
+            "type": "variable",
+            "value": "19"
+          },
+          "valueB": {
+            "type": "variable",
+            "value": "20"
+          }
+        },
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "and",
+                "valueA": {
+                  "type": "variable",
+                  "value": "21"
+                },
+                "valueB": {
+                  "type": "variable",
+                  "value": "22"
+                }
+              },
+              "__collapseElse": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "18",
+                    "value": {
+                      "type": "true"
+                    }
+                  },
+                  "id": "ff8524ac-253a-4fd4-9522-077a5f279b9d"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "*click*",
+                      "The safe opened and you\nobtained a knife!",
+                      "Using your vampiric \nstrength, you cut",
+                      "through the ankle\nmonitor with the knife!",
+                      "You are free! Time to\nflee the restaurant!!"
+                    ],
+                    "__section": "text",
+                    "avatarId": "",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 1,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "bottom",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "key",
+                    "closeButton": "a",
+                    "closeDelayTime": 0.5,
+                    "closeDelayFrames": 30
+                  },
+                  "id": "24af0ad5-b833-486d-9d28-7f30bd75c795"
+                }
+              ],
+              "false": [
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Lavinia: This is a safe",
+                      "Lavinia: I'll need to do\nsomething else in order\nto open it."
+                    ],
+                    "__section": "text",
+                    "avatarId": "",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 1,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "bottom",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "key",
+                    "closeButton": "a",
+                    "closeDelayTime": 0.5,
+                    "closeDelayFrames": 30
+                  },
+                  "id": "7885314e-7bf4-4907-9297-027f164bd353"
+                }
+              ]
+            },
+            "id": "cfbb1272-2d28-4eb0-8bac-a2e09b7958a9"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Lavinia: This is a safe",
+                "Lavinia: I'll need \nsomething else in order\nto open it."
+              ],
+              "__section": "text",
+              "avatarId": "",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "09eb9167-134c-4bcb-b3ef-402267ecb9ba"
+          }
+        ]
+      },
+      "id": "a0cfb801-4576-4495-aaa0-13e7dabd8e01"
+    }
+  ],
+  "leaveScript": [],
+  "_index": 1
+}

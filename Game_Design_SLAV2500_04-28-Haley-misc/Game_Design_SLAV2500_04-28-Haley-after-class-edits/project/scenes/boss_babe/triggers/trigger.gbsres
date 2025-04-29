@@ -1,0 +1,74 @@
+{
+  "_resourceType": "trigger",
+  "id": "fecd1e6b-5162-4f60-ac69-3b4d0a94a7b5",
+  "name": "",
+  "prefabId": "",
+  "x": 16,
+  "y": 3,
+  "symbol": "trigger_40",
+  "prefabScriptOverrides": {},
+  "width": 1,
+  "height": 2,
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "variable",
+          "value": "73"
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "dd5f82c2-ed6e-42ce-9751-af28a76ee18d",
+              "x": {
+                "type": "number",
+                "value": 2
+              },
+              "y": {
+                "type": "number",
+                "value": 15
+              },
+              "direction": "",
+              "fadeSpeed": "2"
+            },
+            "id": "d513d9af-828a-4930-aa7c-5d26e70f0733"
+          }
+        ],
+        "false": []
+      },
+      "id": "0e3b2b0d-cb96-4132-a26a-afefdffbd212"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "You need to beat the\nchef to enter this door."
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "65a27455-5f1c-495d-81a2-2b0ab735333d"
+    }
+  ],
+  "leaveScript": [],
+  "_index": 0
+}

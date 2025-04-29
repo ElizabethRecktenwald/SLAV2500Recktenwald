@@ -1,0 +1,86 @@
+{
+  "_resourceType": "scene",
+  "id": "dd5f82c2-ed6e-42ce-9751-af28a76ee18d",
+  "_index": 12,
+  "name": "Family Reunion",
+  "backgroundId": "ec2883a6-7a5d-4393-b884-3ae79f0d34eb",
+  "tilesetId": "",
+  "width": 20,
+  "height": 18,
+  "type": "TOPDOWN",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "collisions": "0f15+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f15+",
+  "autoFadeSpeed": 1,
+  "symbol": "scene_13",
+  "x": 3336,
+  "y": 656,
+  "script": [
+    {
+      "command": "EVENT_MUSIC_STOP",
+      "args": {},
+      "id": "51c36cfd-d468-4d81-b306-dad63678fbfa"
+    },
+    {
+      "command": "EVENT_MUSIC_PLAY",
+      "args": {
+        "musicId": "19178294-fd66-4067-b1eb-e4c2141d68e1"
+      },
+      "id": "357f69e7-a1b4-4329-88d2-d30ef5ede9f2"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Lavinia, YOU MADE IT!",
+          "Welcome Back to \nTransylvania. "
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "6937c66e-40ab-4199-a611-ffa17a330a12"
+    },
+    {
+      "command": "EVENT_FADE_OUT",
+      "args": {
+        "speed": 6
+      },
+      "id": "0f0d264e-b67d-4085-8aeb-f37840758bbd"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "f7e79591-77ce-400a-9012-973ddf94bdcb",
+        "x": {
+          "type": "number",
+          "value": 0
+        },
+        "y": {
+          "type": "number",
+          "value": 0
+        },
+        "direction": "",
+        "fadeSpeed": "2"
+      },
+      "id": "6064efa3-1102-4a6a-8cc6-ed642adc71e7"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "playerSpriteSheetId": "68702afd-4b67-4d10-98d0-d522886685da"
+}

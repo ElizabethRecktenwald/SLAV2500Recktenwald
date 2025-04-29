@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "02f7e7fd-a992-4b83-a1b8-bad61bc01987",
+  "name": "boss scene",
+  "symbol": "bg_boss_scene",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "filename": "boss scene.png",
+  "tileColors": "",
+  "autoColor": false
+}

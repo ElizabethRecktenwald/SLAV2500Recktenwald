@@ -1,0 +1,312 @@
+{
+  "_resourceType": "scene",
+  "id": "9925a663-4b87-40f9-8df2-e15bb9f5e59f",
+  "_index": 15,
+  "name": "Boss Babe",
+  "backgroundId": "02f7e7fd-a992-4b83-a1b8-bad61bc01987",
+  "tilesetId": "",
+  "width": 20,
+  "height": 18,
+  "type": "PLATFORM",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "collisions": "0f!102+0f12+102+0010+0f2+102+0010+0f2+102+0010+0f2+102+0010+0f2+102+0f5+002+0f3+002+0f3+00!0f2+102+0f5+002+0f3+002+0f3+00!0f2+102+0010+0f2+102+0010+0f2+102+0010+0f2+102+0010+0f2+102+0010+0f2+102+0010+0f2a+0012+0f2+0012+0f15+",
+  "autoFadeSpeed": 1,
+  "symbol": "scene_16",
+  "x": 3240,
+  "y": 392,
+  "script": [
+    {
+      "command": "EVENT_MUSIC_STOP",
+      "args": {},
+      "id": "ca04dcd4-6e61-4442-8daf-1ff9f03e9926"
+    },
+    {
+      "command": "EVENT_MUSIC_PLAY",
+      "args": {
+        "musicId": "a7c68b7f-00bc-4872-9ce8-fe5e62f9b565"
+      },
+      "id": "3f98f91f-3133-4a23-b200-b8f0a692ed3c"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "variable",
+          "value": "76"
+        },
+        "__collapseElse": true,
+        "__collapse": false
+      },
+      "children": {
+        "true": [],
+        "false": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Oh no! The chef is back!"
+              ],
+              "__section": "text",
+              "avatarId": "",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "2a5a1d70-4877-49b4-a890-e3eb69a9eba2"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "You'll need to beat him\nto make it back \nto Transylvania!"
+              ],
+              "__section": "text",
+              "avatarId": "",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "43aed3e3-9d29-4d07-b892-a6a23cde6552"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "76",
+              "value": {
+                "type": "true"
+              }
+            },
+            "id": "e61040ab-38be-4976-bf46-6ae75a924de6"
+          }
+        ]
+      },
+      "id": "3101057d-26fe-401a-bebc-527aa48c0182"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "71",
+        "value": {
+          "type": "number",
+          "value": 3
+        }
+      },
+      "id": "f63f17d9-5a4b-4de6-b7d5-cb411303e730"
+    },
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "b"
+        ],
+        "override": true,
+        "__scriptTabs": "press"
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_LAUNCH_PROJECTILE",
+            "args": {
+              "__section": "projectile",
+              "spriteSheetId": "ab977081-af9c-4a59-a53c-3c30dab4b0b5",
+              "spriteStateId": "",
+              "actorId": "player",
+              "x": 0,
+              "y": 0,
+              "directionType": "actor",
+              "otherActorId": "$self$",
+              "direction": "right",
+              "angle": 0,
+              "angleVariable": "L0",
+              "targetActorId": "$self$",
+              "initialOffset": 0,
+              "speed": 2,
+              "animSpeed": 15,
+              "lifeTime": 1,
+              "loopAnim": true,
+              "destroyOnHit": true,
+              "collisionGroup": "3",
+              "collisionMask": [
+                "1"
+              ]
+            },
+            "id": "3423b874-02c9-4d67-be80-7bac3c5e70d9"
+          }
+        ]
+      },
+      "id": "bfd76876-bf37-448e-8379-47452f1895d4"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [
+    {
+      "command": "EVENT_DEC_VALUE",
+      "args": {
+        "variable": "71"
+      },
+      "id": "86461ebb-6736-4486-8230-661027909b01"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "71"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 2
+          }
+        },
+        "__collapseElse": true,
+        "__disableElse": true,
+        "__collapse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_SET_SPRITE",
+            "args": {
+              "actorId": "97cea756-0d29-4a17-bbc3-50c0cab930b4",
+              "spriteSheetId": "edbbb477-3117-4088-b447-b3dd2ba40b8b"
+            },
+            "id": "9f1eaad6-3627-44cd-9ed9-8e0af620ca0f"
+          }
+        ],
+        "false": []
+      },
+      "id": "14929f2c-96ff-428f-b321-d6efbb0ed0b6"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "71"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 1
+          }
+        },
+        "__collapseElse": true,
+        "__disableElse": true,
+        "__collapse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_SET_SPRITE",
+            "args": {
+              "actorId": "97cea756-0d29-4a17-bbc3-50c0cab930b4",
+              "spriteSheetId": "dbe66765-2ee1-425e-82d3-6b37f93e1334"
+            },
+            "id": "b15a50eb-a3c1-4e4c-9df7-02694ee7014e"
+          }
+        ],
+        "false": []
+      },
+      "id": "75a923ba-42d1-4a0a-95c9-967920b621e9"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "71"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 0
+          }
+        },
+        "__collapseElse": true,
+        "__disableElse": true,
+        "__collapse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "24",
+              "value": {
+                "type": "false"
+              }
+            },
+            "id": "f8764537-a3d9-4db9-976f-b432f7414511"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "71",
+              "value": {
+                "type": "number",
+                "value": 3
+              }
+            },
+            "id": "d55de0ae-65c8-4d89-8f26-86d42f1d345b"
+          },
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "49ebb7e6-609b-4918-81d6-cdc0be4227ef"
+          },
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "9925a663-4b87-40f9-8df2-e15bb9f5e59f",
+              "x": {
+                "type": "number",
+                "value": 6
+              },
+              "y": {
+                "type": "number",
+                "value": 4
+              },
+              "direction": "",
+              "fadeSpeed": "2"
+            },
+            "id": "6cc4d843-1312-4b85-8945-15ef864c589e"
+          }
+        ],
+        "false": []
+      },
+      "id": "dd368d8b-3700-4388-b308-f4a2575719d0"
+    }
+  ],
+  "playerHit3Script": [],
+  "playerSpriteSheetId": "f0b780c1-0821-449e-b0b0-a8ec3deab4d6",
+  "autoFadeEventCollapse": false
+}

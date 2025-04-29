@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "9a7c6d54-bae9-43b3-9e49-786568512163",
+  "name": "Final_combat",
+  "symbol": "bg_final_combat",
+  "width": 20,
+  "height": 54,
+  "imageWidth": 160,
+  "imageHeight": 432,
+  "filename": "Final_combat.png",
+  "tileColors": "",
+  "autoColor": false
+}
